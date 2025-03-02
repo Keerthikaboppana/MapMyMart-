@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapMyMart</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>MapMyMart</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search">
+        </div>
+    </div>
+
+   
+    <div class="container">
+       
+        <div class="products">
+          
+            <div class="product" data-name="fruits" data-price="100" data-aisle="A1" data-row="3">
+                <img src="https://livekarts.in/wp-content/uploads/2021/05/mango.jpg" alt="mango">
+                <div class="product-details">
+                    <h3>Mango</h3>
+                    <p>Price: RS-100</p>
+                    <p>Aisle: A1, Row: 3</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="fruits" data-price="30" data-aisle="B2" data-row="5">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCEQo8hDf4OoXPydNZ100ZRdI6cz2fkS5zZg&s" alt="Banana">
+                <div class="product-details">
+                    <h3>Banana</h3>
+                    <p>Price: RS-30</p>
+                    <p>Aisle: B2, Row: 5</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+           
+<div class="product" data-name="vegetables" data-price="20" data-aisle="C1" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.3RtsW1Qc1T4xR0SJJvCpdwHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Tomato">
+    <div class="product-details">
+        <h3>Tomato</h3>
+        <p>Price: RS-120(1Kg)</p>
+        <p>Aisle: C1, Row: 2</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Orange" data-price="60" data-aisle="C2" data-row="1">
+    <img src="https://th.bing.com/th/id/OIP.2FfCuh2sYyROwNJoOQ-k1wHaFU?w=273&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Orange">
+    <div class="product-details">
+        <h3>Orange</h3>
+        <p>Price: RS-160(1Kg)</p>
+        <p>Aisle: C2, Row: 1</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="vegetables" data-price="45" data-aisle="C3" data-row="4">
+    <img src="https://th.bing.com/th/id/OIP.nJkoMJFQoor5sT1dRQ0h6gHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Broccoli">
+    <div class="product-details">
+        <h3>Broccoli</h3>
+        <p>Price: RS-45</p>
+        <p>Aisle: C3, Row: 4</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Rice Bag (5kg)" data-price="300" data-aisle="D1" data-row="5">
+    <img src="https://th.bing.com/th/id/OIP.CP9-iYOZUmwtxT56JX0HZAHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Rice Bag">
+    <div class="product-details">
+        <h3>Rice Bag (5kg)</h3>
+        <p>Price: RS-300</p>
+        <p>Aisle: D1, Row: 5</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Olive Oil (1L)" data-price="450" data-aisle="D2" data-row="3">
+    <img src="https://th.bing.com/th/id/R.02489fda3c451adc295eed5f9c6e42cf?rik=KP5AI9D%2fEbzsEw&riu=http%3a%2f%2fwww.oliveoilsland.com%2fwp-content%2fthemes%2fneve%2folive%2fimages%2fimg-brand%2fbest-oliv-oil-photo13.jpg&ehk=itR9CFTH6JhOzjjpLrKcnSysui8s9xJ9LwKMen96cqA%3d&risl=&pid=ImgRaw&r=0" alt="Olive Oil">
+    <div class="product-details">
+        <h3>Olive Oil (1L)</h3>
+        <p>Price: RS-450</p>
+        <p>Aisle: D2, Row: 3</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Chocolates" data-price="150" data-aisle="A2" data-row="1">
+    <img src="https://th.bing.com/th/id/OIP.YUNyvUk3Y4_wZWR-vNfrAQHaHa?w=192&h=192&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Chocolates">
+    <div class="product-details">
+        <h3>Dairy Milk</h3>
+        <p>Price: RS-20</p>
+        <p>Aisle: A2, Row: 1</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+<div class="product" data-name="Chocolates" data-price="150" data-aisle="A2" data-row="1">
+    <img src="https://th.bing.com/th/id/OIP.do76tf3yjWn9Iq2GRpp08AHaHa?w=188&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Chocolates">
+    <div class="product-details">
+        <h3>Twix</h3>
+        <p>Price: RS-100</p>
+        <p>Aisle: A2, Row: 2</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+<div class="product" data-name="Chocolates" data-price="150" data-aisle="A2" data-row="1">
+    <img src="https://th.bing.com/th/id/OIP.iOiWuE4IhyMOOjLoH64PTQHaHa?w=173&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Chocolates">
+    <div class="product-details">
+        <h3>5-Star</h3>
+        <p>Price: RS-10</p>
+        <p>Aisle: A2, Row: 2</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+<!--chips -->
+<div class="product" data-name="chips" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.ou-uQtJezCDvci9RfAxt3gHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="lays chips">
+    <div class="product-details">
+        <h3>Lays Sour Cream & Onion </h3>
+        <p>Price: RS-40</p>
+        <p>Aisle: G2, Row: 2</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="chips" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.csfadJqn5er3N9HKeYPQpQHaHa?w=188&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="lays">
+    <div class="product-details">
+        <h3>Lays Flamin Hot</h3>
+        <p>Price: RS-50</p>
+        <p>Aisle: G2, Row: 3</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="chips" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.i0M9shhYZ2c8GYxON1zVmAHaKV?w=143&h=201&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="lays">
+    <div class="product-details">
+        <h3>Lays Barbeque</h3>
+        <p>Price: RS-70</p>
+        <p>Aisle: G2, Row:4</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="chips" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.qxLmAf_IUOCuSOTpNSMYFAAAAA?w=190&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="lays">
+    <div class="product-details">
+        <h3>Lays BLT Chips</h3>
+        <p>Price: RS-80</p>
+        <p>Aisle: G2, Row: 2</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+
+<div class="product" data-name="chips" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.Cw5wsXAuTalxl36yGOWQrgHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="lays">
+    <div class="product-details">
+        <h3>Lay's Kettle Cooked</h3>
+        <p>Price: RS-180</p>
+        <p>Aisle: G2, Row: 4</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+
+<!--soaps-->
+
+<div class="product" data-name="soap" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.OHuf9KVGS_n-8SKv5-qJGgHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Dove soap">
+    <div class="product-details">
+        <h3>Dove Soap Bar</h3>
+        <p>Price: RS-180</p>
+        <p>Aisle: F2, Row: 2</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="soap" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.kjnqlokAEVk_iJMvXApcIQHaHa?w=204&h=204&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="soap">
+    <div class="product-details">
+        <h3>Pears Soap Bar</h3>
+        <p>Price: RS-90</p>
+        <p>Aisle: E6, Row: 1</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+
+<div class="product" data-name="soap" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.aeVm_H7ba5zw4CMmo1vLJQHaIy?w=168&h=201&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="soap">
+    <div class="product-details">
+        <h3>Cinthol Soap Bar</h3>
+        <p>Price: RS-80</p>
+        <p>Aisle: E6, Row: 3</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+
+<div class="product" data-name="soap" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.rAnqH9e-yYqUdSCFbRBF4gHaHa?w=160&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="soap">
+    <div class="product-details">
+        <h3>Santoor Soap Bar </h3>
+        <p>Price: RS-120</p>
+        <p>Aisle: E6, Row: 4</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+
+<!--soaps-->
+
+<div class="product" data-name="Detergent Powder (2kg)" data-price="180" data-aisle="E6" data-row="2">
+    <img src="https://th.bing.com/th/id/OIP.S-dAoQI3VBOlHut4uTlSDgHaHa?w=200&h=200&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Detergent Powder">
+    <div class="product-details">
+        <h3>TIDE Detergent Powder (2kg)</h3>
+        <p>Price: RS-180</p>
+        <p>Aisle: E6, Row: 2</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name=" cereal" data-price="120" data-aisle="A3" data-row="3">
+    <img src="https://th.bing.com/th/id/OIP.RCc87pER7CLEHhlYOy6oDgHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Cereal">
+    <div class="product-details">
+        <h3>Kellogg's Rice Krispies(Family Pack)</h3>
+        <p>Price: RS-120</p>
+        <p>Aisle: A3, Row: 3</p>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+
+            
+            <div class="product" data-name="Tomato" data-price="20" data-aisle="C1" data-row="2">
+                <img src="https://freshtechproduce.com/wp-content/uploads/2019/06/PPOTATOES-10LB-BAG.jpg" alt="Potato">
+                <div class="product-details">
+                    <h3>Potato (1Kg)</h3>
+                    <p>Price: RS-50</p>
+                    <p>Aisle: D1, Row: 2</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="lemons" data-price="20" data-aisle="C1" data-row="2">
+                <img src="https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/795633-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0ODk2NDF8aW1hZ2UvanBlZ3xpbWFnZXMvaGI2L2hjNC85MTE2NDU5MTcxODcwLmpwZ3xlOWNmMzI4YjA4NGQ0ODgyODg2NzgwYmM0NmIxN2RkMWNhYjRhMjljZGIzNjJlZGI1M2ZiNzUzYmRiNWFmMzdl" alt="Potato">
+                <div class="product-details">
+                    <h3>Lemons (1Kg)</h3>
+                    <p>Price: RS-150</p>
+                    <p>Aisle: D1, Row: 4</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="cereal" data-price="60" data-aisle="C2" data-row="1">
+                <img src="https://th.bing.com/th/id/OIP.vb0y1XVg6tg-nInOAXmvUgHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Lucky Charms">
+                <div class="product-details">
+                    <h3>Lucky Charms</h3>
+                    <p>Price: RS-60</p>
+                    <p>Aisle: C2, Row: 1</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            <div class="product" data-name="pasta" data-price="60" data-aisle="C2" data-row="1">
+                <img src="https://th.bing.com/th/id/OIP.7wBZnsHdKgTh2Nrz_WMqiwHaHa?w=191&h=191&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Pasta Penne Maggie">
+                <div class="product-details">
+                    <h3>Pasta Penne Maggie</h3>
+                    <p>Price: RS-30</p>
+                    <p>Aisle: C3, Row: 1</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="total">Total: RS<span id="total-price">0</span></div>
+            <button class="generate-barcode" onclick="generateBarcode()">Generate Barcode</button>
+            <div class="barcode-message" id="barcode-message"></div>
+        </div>
+
+      
+        <div class="barcode-container">
+            <svg id="barcode"></svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
