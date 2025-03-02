@@ -1,1 +1,2 @@
 # MapMyMart-
+One of the project's features is an interactive supermarket map that lets customers look for products and find them exactly where they are in the shop. While the back end uses Python with Flask to manage API queries for product searches and location retrieval, the front end is constructed using HTML, CSS, and JavaScript. Product data is stored in a lightweight SQLite database, and an HTML image map is used to show the map as a static supermarket layout
